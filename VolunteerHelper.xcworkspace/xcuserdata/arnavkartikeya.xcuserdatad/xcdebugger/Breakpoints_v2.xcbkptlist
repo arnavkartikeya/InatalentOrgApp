@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VolunteerHelper/ViewControllers/SignUp.swift"
+            timestampString = "579913150.301025"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "SignUp"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VolunteerHelper.SignUp.sgusername.getter : weak Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "VolunteerHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arnavkartikeya/Desktop/VolunteerHelper/VolunteerHelper/ViewControllers/SignUp.swift"
+                  timestampString = "573876311.99423"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VolunteerHelper.SignUp.sgusername.setter : weak Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "VolunteerHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arnavkartikeya/Desktop/VolunteerHelper/VolunteerHelper/ViewControllers/SignUp.swift"
+                  timestampString = "573876311.998349"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VolunteerHelper.SignUp.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; VolunteerHelper.SignUp"
+                  moduleName = "VolunteerHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arnavkartikeya/Desktop/VolunteerHelper/VolunteerHelper/ViewControllers/SignUp.swift"
+                  timestampString = "573876312.000348"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "186">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VolunteerHelper.SignUp.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;VolunteerHelper.SignUp&gt;"
+                  moduleName = "VolunteerHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arnavkartikeya/Desktop/VolunteerHelper/VolunteerHelper/ViewControllers/SignUp.swift"
+                  timestampString = "573876312.00217"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "157">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

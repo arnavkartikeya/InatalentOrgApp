@@ -8,12 +8,20 @@
 
 import UIKit
 import Firebase
-
+class Events {
+    var eventName: String?
+    var eventNum: String?
+    
+    init(prName:String, prCategory:String) {
+        self.eventName = prName
+        self.eventNum = prCategory
+    }
+}
 class EventsTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
 
     
     @IBOutlet var tblEvents: UITableView!
-    var eventsArray: [String] = ["Hello"]
+    var eventsArray = [Events]();
     //test
     var ref: DatabaseReference!
         
@@ -31,7 +39,8 @@ class EventsTableViewController: UIViewController, UITableViewDelegate, UITableV
             let events = data.value as! [String:[String:Any]]
             for (_, value) in events {
                 //print(value["EventTitle"]);
-                self.eventsArray.append(value["EventTitle"]! as! String)
+                let event = Events(prName: value["EventTitle"]! as! String, prCategory: value["numPeople"] as! String)
+                self.eventsArray.append(event)
             }
             self.tblEvents.reloadData()
             self.tblEvents.dataSource = self
@@ -47,16 +56,25 @@ class EventsTableViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        print(self.eventsArray)
-        let cell = tableView.dequeueReusableCell(withIdentifier: "productstable", for: indexPath)
-        /*if cell == nil {
+        var cell = tableView.dequeueReusableCell(withIdentifier: "productstable")
+        if cell == nil {
             cell = UITableViewCell(style: .subtitle, reuseIdentifier: "productstable")
-        }*/
+        }
         
-        cell.textLabel?.text = self.eventsArray[indexPath.row]
+        cell?.textLabel?.text = eventsArray[indexPath.row].eventName
+        cell?.detailTextLabel?.text = eventsArray[indexPath.row].eventNum
         
-        return cell
+        return cell!
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showdetail", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? DetailViewController {
+            destination.product = eventsArray[(tblEvents.indexPathForSelectedRow?.row)!]
+            tblEvents.deselectRow(at: tblEvents.indexPathForSelectedRow!, animated: true)
+            
+        }
     }
         
         

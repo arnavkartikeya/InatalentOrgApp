@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C5F1BBA96EF5CF65F7CA2C6 /* libPods-VolunteerHelperUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E17EFE22ECE2CF51D66936E /* libPods-VolunteerHelperUITests.a */; };
+		625A53C3229126C2004B00D9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625A53C2229126C2004B00D9 /* DetailViewController.swift */; };
 		6290A6AA224FDBA8009691D7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6290A6A9224FDBA8009691D7 /* FirstViewController.swift */; };
 		629F9B902234816E007A40ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629F9B8F2234816E007A40ED /* AppDelegate.swift */; };
 		629F9B922234816E007A40ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629F9B912234816E007A40ED /* ViewController.swift */; };
@@ -48,6 +49,7 @@
 		1E17EFE22ECE2CF51D66936E /* libPods-VolunteerHelperUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VolunteerHelperUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A263A38492C7972C6BD3C2C /* Pods-VolunteerHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolunteerHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-VolunteerHelper/Pods-VolunteerHelper.release.xcconfig"; sourceTree = "<group>"; };
 		319B17BB68B15A8A0BA2AAB6 /* libPods-VolunteerHelperTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VolunteerHelperTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		625A53C2229126C2004B00D9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6290A6A9224FDBA8009691D7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		629F9B8C2234816E007A40ED /* VolunteerHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolunteerHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		629F9B8F2234816E007A40ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				629F9BC522348C4C007A40ED /* EventCreatorViewController.swift */,
 				6290A6A9224FDBA8009691D7 /* FirstViewController.swift */,
 				62A6EEAE2274C9EC00429952 /* EventsTableViewController.swift */,
+				625A53C2229126C2004B00D9 /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				629F9B902234816E007A40ED /* AppDelegate.swift in Sources */,
 				629F9BC022348B7E007A40ED /* Login.swift in Sources */,
 				6290A6AA224FDBA8009691D7 /* FirstViewController.swift in Sources */,
+				625A53C3229126C2004B00D9 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

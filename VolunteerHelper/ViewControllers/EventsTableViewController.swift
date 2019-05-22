@@ -11,10 +11,12 @@ import Firebase
 class Events {
     var eventName: String?
     var eventNum: String?
+    var eventDesc: String?
     
-    init(prName:String, prCategory:String) {
+    init(prName:String, prCategory:String, prDesc:String) {
         self.eventName = prName
         self.eventNum = prCategory
+        self.eventDesc = prDesc
     }
 }
 class EventsTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
@@ -39,7 +41,7 @@ class EventsTableViewController: UIViewController, UITableViewDelegate, UITableV
             let events = data.value as! [String:[String:Any]]
             for (_, value) in events {
                 //print(value["EventTitle"]);
-                let event = Events(prName: value["EventTitle"]! as! String, prCategory: value["numPeople"] as! String)
+                let event = Events(prName: value["EventTitle"]! as! String, prCategory: value["numPeople"] as! String, prDesc: value["EventDescription"] as! String)
                 self.eventsArray.append(event)
             }
             self.tblEvents.reloadData()

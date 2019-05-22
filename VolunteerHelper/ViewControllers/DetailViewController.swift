@@ -13,11 +13,15 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var lblDetails: UILabel!
     
+    @IBOutlet weak var eventDesc: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        lblDetails.text = "\((product?.eventName)!) needs this many people \((product?.eventNum)!)!"
+        lblDetails.text = "\((product?.eventName)!) needs this many people \((product?.eventNum)!)"
+        eventDesc.text = "\((product?.eventDesc)!)"
+        
+        
     }
     /*
     // MARK: - Navigation

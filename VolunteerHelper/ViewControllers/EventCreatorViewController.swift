@@ -28,6 +28,7 @@ class EventCreatorViewController: UIViewController {
 
 
     
+    @IBOutlet weak var EventDescription: UITextView!
     
     @IBAction func slide(_ sender: UISlider) {
         num = sender.value
@@ -40,7 +41,7 @@ class EventCreatorViewController: UIViewController {
         //push stuff to firebase
         let eventName = eventTitle.text!
         let eventDB = Database.database().reference().child("Events")
-        let eventDict = ["EventTitle": eventTitle.text!, "numPeople": numberOfPeople.text!]
+        let eventDict = ["EventTitle": eventTitle.text!, "numPeople": numberOfPeople.text!, "EventDescription": EventDescription.text!]
         
         eventDB.child(eventName).setValue(eventDict){
             (error, reference) in
